@@ -1,0 +1,40 @@
+module Data exposing (..)
+
+import Array
+
+
+data : Array.Array ( String, List String )
+data =
+    Array.fromList <|
+        [ ( "O.ZiH<ESC>x3D$D<ESC>", [ ".", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "x3D$D<ESC>1gqDI<ESC>", [ "  The quic", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "1gqDI<ESC>Zgw1V<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "Zgw1V<ESC>m1kJq<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "m1kJq<ESC>hVkcG<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "hVkcG<ESC>Degi2<ESC>", [ "", "  jumpe2d over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "Degi2<ESC>Rnnk2<ESC>", [ "", "  jumpednnk2er", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "Rnnk2<ESC>GChOe<ESC>", [ "nnk2quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   hOe" ] )
+        , ( "GChOe<ESC>aarCu<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   hOearCu" ] )
+        , ( "aarCu<ESC>EotIQ<ESC>", [ "TarCuhe quick brown fox", "tIQ", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "EotIQ<ESC>YLiAz<ESC>", [ "The quick brown fox", "tIQ", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   Azdog." ] )
+        , ( "YLiAz<ESC>GSV3i<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   V3i" ] )
+        , ( "GSV3i<ESC>qGlyX<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   V3i" ] )
+        , ( "qGlyX<ESC>fBa$.<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "fBa$.<ESC>klLzz<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "klLzz<ESC>kajP1<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "kajP1<ESC>aaH3R<ESC>", [ "TaH3Rhe quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "aaH3R<ESC>Vsmip<ESC>", [ "mip", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "Vsmip<ESC>cODQL<ESC>", [ "mip", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "cODQL<ESC>gLRUH<ESC>", [ "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "gLRUH<ESC>pmOOd<ESC>", [ "The quick brown fox", "d", "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "pmOOd<ESC>SKcWK<ESC>", [ "The quick brown fox", "KcWK", "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "SKcWK<ESC>OIz22<ESC>", [ "Iz22", "KcWK", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "OIz22<ESC>AjTCi<ESC>", [ "Iz22jTCi", "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "AjTCi<ESC>tkBP1<ESC>", [ "The quick brown foxjTCi", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "tkBP1<ESC>ppVWu<ESC>", [ "The quick brown fox", "The quick brown fox", "the quick brown fox", "The quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "ppVWu<ESC>iwPzb<ESC>", [ "The quick brown fox", "The quick brown fox", "wPzbthe quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "iwPzb<ESC>ss3Dn<ESC>", [ "wPzs3DnThe quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "ss3Dn<ESC>iOZsG<ESC>", [ "s3DOZsGnhe quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "iOZsG<ESC>rdePb<ESC>", [ "OZsdThTe quick brown fox", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        , ( "rdePb<ESC>CVdjr<ESC>", [ "Vdjr", "  jumped over", " the lazy dog.", "  The quick", "    brown fox jumped", "    over the lazy", "   dog." ] )
+        ]
